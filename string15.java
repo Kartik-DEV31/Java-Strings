@@ -5,58 +5,32 @@ public class string15 {
 				
 		
 		Scanner str = new Scanner(System.in);
-		System.out.print("Enter the String : ");
-		String string = str.nextLine();
+		System.out.print("Enter the String 1 : ");
+		String string1 = str.nextLine().toUpperCase();
 		
 		
 		System.out.print("Enter the String 2 : ");
-		String string2 = str.nextLine();
-		int j=0;
-	
-	char c;
-		if (string.length()<string2.length()) {
-			String swapper = string2;
-			string2=string;
-			string=swapper;
-		}
-			for (int i=0;i<string.length();i++) {
-			
-			
-				if (j>=string2.length())
-					
-				{
-					c='!';
-				}
-				else
-					c=string2.charAt(j);		
-				
-				
-				
-				
-				if (string.charAt(i)!=c) {
-					
-					string = string.replace(string.charAt(i), '+');
-				}else 
-					{
-					
-					j++;
-					
-					}
-				
-			
+		String string2 = str.nextLine().toUpperCase();
+		int j =0;
 		
-		
-	
+		for(int i =0 ;i<string1.length();i++)
+		{
+			if(string2.charAt(j)!=string1.charAt(i)) {
+				
+				string1=string1.replace(string1.charAt(i), '+');
+				j++;
+				
+			}
+			if (j>=string2.length())break;
+			
+			
+			
 		}
 		
 		
+		System.out.println("Answer :"+string1);
 	
-				
-			
-		
-		System.out.print("Answer : "+string);
-		
+	
 	}
-	
-	
 }
+	

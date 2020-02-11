@@ -13,21 +13,23 @@ public class string14 {
 	System.out.println("Youre String : "+string);
 	for (int i = 0;i<string.length();i++) {
 	 chr[i+1] = string.charAt(i); }
+	String answer  = new String() ;
 	
 	for (int i = 1;i<=string.length();i++) {
 		if (i%2==0)
 		{
 			if ( chr[i]=='a'||chr[i]=='e'||chr[i]=='i'||chr[i]=='o'||chr[i]=='u') {
-				chr[i]='\0';
-				 System.out.print("am here");
 				
-			}else continue;
+			continue;
+				
+			}
+			
+			
 		}
-		
+		answer += chr[i] ;
 		
 	}
-	string = new String(chr);
-	System.out.print("String after processing : "+string);
+System.out.print("String after processing : "+answer);
 	
 	
 }
