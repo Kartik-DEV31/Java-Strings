@@ -7,7 +7,7 @@ public class string29 {
 		String temp="";
 		Scanner str=new Scanner(System.in);
 		System.out.print("Enter the string :- ");
-		String string=str.nextLine();
+		String string=str.nextLine().toLowerCase();
 		String[] s1=string.split(" ");
 		for(i=0;i<s1.length;i++)
 		{
